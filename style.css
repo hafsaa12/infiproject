@@ -1,0 +1,47 @@
+header{
+    background-color: aqua;
+    padding: 20px;
+}
+nav ul{
+    text-decoration:none;
+    list-style-type:none;
+    margin:0;
+    padding: 0;
+    justify-content: right;
+    display: flex;
+}
+nav li{
+    display: inline;
+    margin-right: 50px;
+    font-size: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+/* Add hover effect to the navigation links*/
+nav ul li a:hover {
+    color:turquoise;
+}
+/*Hero-section*/
+.hero{
+    background-color:aquamarine;
+    padding: 100px;
+    text-align: center;
+}
+.hero-content{
+    color: beige;
+}
+.hero h1{
+    font: size 50px; ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hero h2{
+    font-size: 38px;
+}
+.button{
+    background-color:white;
+    padding: 10 px 20px;
+    text-decoration:none ;
+    color:orangered ;
+}

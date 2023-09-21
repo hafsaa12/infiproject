@@ -31,7 +31,8 @@ nav a{
 }
 /* Add hover effect to the navigation links*/
 nav ul li a:hover {
-    color:turquoise;
+    color: turquoise;
+    background-color: brown;
 }
 /*Hero-section*/
 .hero{
@@ -77,7 +78,7 @@ nav ul li a:hover {
     max-width: 400px;
     margin:0 auto;
     background-color: paleturquoise;
-
+    
 
 }
 /* styling heading */
@@ -111,12 +112,12 @@ li{
 /* styling our link with-in the list */
 li a {
     text-decoration: none;
-    color:brown;
+    color: black;
     transition: background-color 0.3
 }
 /* style for link hover state */
 li a:hover{
-    background-color: brown;
+    background-color: unset;
     color: white;
 }
 /* styling the visited link */
@@ -267,7 +268,7 @@ h1{
     margin-bottom: 30px;
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
     background:transparent;
@@ -364,7 +365,7 @@ h1{
     overflow: hidden;
 }
 .card1{
-    background: #80daeb
+    background: #80daeb;
 }
 
 

@@ -126,3 +126,61 @@ let year = now.getFullYear()
  document.querySelector('#img33').addEventListener('mouseleave',() => {
     document.querySelector('#img3').style.height = "0"
  })
+
+//  vanilla tilts js 
+
+
+  //  dark-mode-toggle
+let toggleMode = document.querySelector("#toggle-mode")
+let toggleLabel = document.querySelector("#toggle-label")
+
+toggleMode.addEventListener('change',() => {
+    darkModeStyle();
+    document.body.classList.toggle('dark-mode')
+    if(document.body.classList.contains('dark-mode')){
+        toggleLabel.textContent = "Light Mode"
+    }else {
+        toggleLabel.textContent = "Dark Mode"
+    }
+})
+
+if(window.matchMedia('(prefers-color-schem: light)').matches){
+    document.body.classList.add('dark-mode')
+    toggleLabel.textContent = "Light Mode"
+}
+
+function darkModeStyle(){
+
+    // hero
+    let divs = document.querySelectorAll(".dark-div")
+    let i
+    for(i = 0; i < divs.length; i++){
+        divs[i].style.backgroundColor = "#1a1a25"
+    }
+
+
+    let darkText = document.querySelectorAll(".dark-txt")//.style.color = "#fff"
+     let j
+
+     for(j = 0; j < darkText.length; j++){
+        darkText[j].style.color = "#fff"
+     }
+
+     if(toggleMode.checked == false){
+        let divs = document.querySelectorAll(".dark-div")
+        let i
+        for(i = 0; i < divs.length; i++){
+            divs[i].style.backgroundColor = ""
+        }
+
+        let darkText = document.querySelectorAll(".dark-txt")//.style.color = "#fff"
+        let j
+   
+        for(j = 0; j < darkText.length; j++){
+           darkText[j].style.color = ""
+        }
+
+     }
+     
+    
+}

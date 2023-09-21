@@ -6,12 +6,24 @@
     <title>My portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
+    <script defer type="text/javascript" src="vanilla-tilt.js"></script>
+
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
 
 </head>
 <body>
 <header>
+    <!-- toggle dark mode button -->
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="toggle-mode" name="check">
+            <span class="slider"></span>
+        </label>
+        <span id="toggle-label"> Dark Mode</span>
+    </div>
+    <!-- end toggle -->
+
     <div class="mob">
         <button class="mybtn">MENU</button>
     </div>
@@ -30,8 +42,8 @@
 </header>
 <main>
     <!--hero section-->
-    <section class="hero">
-    <div class="hero-content">
+    <div class="hero dark-div">
+    <div class="hero-content dark-div">
         <!--Heading-->
         <h1 id="output"></h1>
         
@@ -40,13 +52,13 @@
         <!--Download cv button-->
         <button class="button"><a href="/imgs/hafsa1.jpg" download="hafsa1.jpg">Download cv</a></button>
     </div>
-    </section>
+    </div>
     <!--end of hero-content-->
     
     
     <!--About section-->
 <section id="About" class="About">  
-    <div class="about-content">
+    <div class="about-content tilt-div" data-tilt>
     
         <!--container for the profile picture-->
         <div class="img-cont">
@@ -141,7 +153,7 @@
     <div class="card-container">
 
         <div class="card-cont">
-            <div class="cont card1">
+            <div class="cont card1 tilt-div" data-tilt>
                 <span><i class="fa-solid fa-arrow-left"></i></span>
                 <span class="cad1-top-txt">En</span>
                 <span class="cad1-top-txt2">Fr</span>
@@ -173,7 +185,7 @@
 
                 
             </div>
-            <div class="cont card3">
+            <div class="cont card3 your-element">
                 <span><i class="fa-solid fa-arrow-left"></i></span>
                 <span class="cad1-top-txt">En</span>
                 <span class="cad1-top-txt2">Fr</span>
@@ -208,7 +220,7 @@
         </div>
 
         <div class="card-cont">
-            <div class="cont card2">
+            <div class="cont card2 your-element">
                 <span><i class="fa-solid fa-arrow-left"></i></span>
                 <span class="cad1-top-txt" style="color: royalblue;">En</span>
                 <span class="cad1-top-txt2">Fr</span>
@@ -241,7 +253,7 @@
                 
             </div>
             
-            <div class="cont card4">
+            <div class="cont card4 your-element">
                 <span><i class="fa-solid fa-arrow-left"></i></span>
                 <span class="cad1-top-txt">En</span>
                 <span class="cad1-top-txt2">Fr</span>
@@ -311,31 +323,31 @@
     </div>
     
 </main>
-<footer>
-    <div class="foote-main-div">
+<footer class="dark-div">
+    <div class="foote-main-div ">
         <div class="footer-content">
             <h4 class="ttl">CONTENT</h4>
-            <p class="ft-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+            <p class="ft-txt dark-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
              Animi ad cum voluptatum illo impedit. In dolores velit quam eligendi quo cum sapiente <br>
             corrupti minus! Accusantium excepturi veritatis reprehenderit. Molestias, repellat.</p>
          </div>
          <div class="about ft-flex-cont">
             <h4 class="ttl">ABOUT</h4>
             <ul class="about-txt">
-                <li>Projects</li>
-                <li>About us</li>
-                <li>Blog</li>
-                <li>Awards</li>
+                <li class="dark-txt">Projects</li>
+                <li class="dark-txt">About us</li>
+                <li class="dark-txt">Blog</li>
+                <li class="dark-txt">Awards</li>
             </ul>
             
          </div>
          <div class="address ft-flex-cont">
             <h4 class="ttl">ADDRESS</h4>
               <ul>
-                <li><i class="fa-solid fa-house"></i> Mombasa</li>
-                <li><i class="fa-solid fa-envelope"></i> hafsa@gmail.com</li>
-                <li><i class="fa-solid fa-phone"></i> +254 721666899</li>
-                <li><i class="fa-solid fa-mobile"></i> +254 721666899</li>
+                <li class="dark-txt"><i class="fa-solid fa-house dark-txt"></i> Mombasa</li>
+                <li class="dark-txt"><i class="fa-solid fa-envelope dark-txt"></i> hafsa@gmail.com</li>
+                <li class="dark-txt"><i class="fa-solid fa-phone dark-txt"></i> +254 721666899</li>
+                <li class="dark-txt"><i class="fa-solid fa-mobile dark-txt"></i> +254 721666899</li>
               </ul>
               
          </div>
@@ -357,5 +369,16 @@
     </div>  
      <h2 class="yy">&copy;</h2>
 </footer>
+
+<script type="text/javascript" src="vanilla-tilt.js">
+
+    let myelement = document.querySelector('.tilt-div')
+    VanillaTilt.init(myelement,{
+    max: 25, // Maximum tilt rotation (in degrees)
+    speed: 400, // Tilt transition speed
+    glare: true, // Enable glare effect
+    "max-glare": 0.5, // Maximum glare opacity
+  });
+</script>
 </body>
 </html>

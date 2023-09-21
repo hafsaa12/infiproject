@@ -362,7 +362,7 @@ h1{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: auto;
+    height: 0;
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     transition: height 0.5s;

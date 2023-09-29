@@ -896,7 +896,19 @@ mobile screen
         height: 150vh;
     }
     .myimage-cont{
-        display: none;
+        display: flex;
+        flex-direction: column;
+        position: relative !important;
+        height: 160vh !important;
+        background-color: black;
+    }
+    .img-c-1{
+        display: block;
+        gap: 10px;
+        margin: 0 auto;
+        height: 40vh;
+        width: 95vw;
+
     }
 }
 /*

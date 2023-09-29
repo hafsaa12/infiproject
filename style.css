@@ -226,8 +226,8 @@ a{
 .fa-instagram{
     /* background-image: linear-gradient(78deg,#515BD4,#8134AF,#DD2A7B,#feda77,#f58529); */
     /* -webkit-text-fill-color:transparent;
-    background-clip: text;
-    font-size: 1.7rem; */
+    background-clip: text;*/
+    font-size: 1.7rem; 
     color: magenta;
 }
 .fa-linkedin{
@@ -900,7 +900,7 @@ mobile screen
         flex-direction: column;
         position: relative !important;
         height: 160vh !important;
-        background-color: black;
+        /* background-color: black; */
     }
     .img-c-1{
         display: block;

@@ -745,7 +745,12 @@ footer{
  
 /*  
 mobile screen
+
 */
+@media screen and (max-width:320px){
+
+
+}
 
 @media screen and (max-width:767px){
     /* toggle container */
@@ -848,8 +853,27 @@ mobile screen
     }
     /* main card container */
     .card-container{
+         display: none;
+         flex-direction: column; 
+         background: black;
+         height: 190vh;
+         margin-top: 20px;
+    }
+    .card-cont {
+        display: flex;
+        width: 100vw;
+        height: 80vh;
+
          
-         display: none; 
+    }
+    .cont{
+        width: 100vw;
+        display: flex;
+        transform: translateY(70px);
+
+
+
+    
     }
      .foote-main-div{
         display: block;
@@ -909,6 +933,9 @@ mobile screen
         height: 40vh;
         width: 95vw;
 
+    }
+    #output{
+        font-size: 20px;
     }
 }
 /*
